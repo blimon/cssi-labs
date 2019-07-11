@@ -22,6 +22,7 @@ def get_player_move():
     return raw_input("Choose your move [r|p|s]: ").lower()
 
 
+
 def get_computer_move():
     """Randomly generates the computer's move and
     returns it in the form of 'r', 'p', or 's'"""
@@ -58,5 +59,5 @@ def get_move_name(short_move):
     else:
         return "Scissors"
 
-
 # Write your code below - make RPS happen using the functions above!
+myWinner = determine_winner(get_player_move(),get_computer_move()))
